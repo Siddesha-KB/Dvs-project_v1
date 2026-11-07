@@ -1,0 +1,34 @@
+{
+  "name": "dvs_project",
+  "version": "1.0.0",
+  "description": "Northbridge University Evaluation Cloud automation framework",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:smoke": "npx playwright test tests/smoke.spec.ts",
+    "test:feature": "npx cucumber-js --config cucumber.json",
+    "report": "npx playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "bdd",
+    "qa"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.14.0",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "winston": "^3.17.1"
+  }
+}

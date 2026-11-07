@@ -1,0 +1,25 @@
+
+# Dependencies
+node_modules/
+
+# Prompts
+/prompts/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Reports and artifacts
+allure-results/
+reports/
+screenshots/
+videos/
+logs/
